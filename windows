@@ -1,0 +1,82 @@
+
+
+Sign in with your AWS account.
+
+1️⃣ Open EC2 Dashboard
+Search for EC2 in the top search bar.
+
+Click on EC2 under Services.
+
+2️⃣ Click “Launch Instance”
+Click the orange “Launch instance” button.
+
+3️⃣ Enter Instance Name
+Example: MyWindowsServer
+
+4️⃣ Select Amazon Machine Image (AMI)
+Choose a Windows AMI (e.g., “Microsoft Windows Server 2019 Base”).
+
+5️⃣ Choose Instance Type
+Select t2.micro (Free tier eligible) or larger if needed.
+
+6️⃣ Create or Select a Key Pair
+Choose an existing key pair OR create a new one.
+
+If creating a new key pair:
+
+Select .pem format
+
+Download and save it safely (needed to decrypt your Windows password later).
+
+7️⃣ Configure Network Settings
+Use default VPC/subnet or customize.
+
+Enable Auto-assign Public IP.
+
+In the security group, allow:
+
+✅ RDP (Port 3389) – Required for Windows remote desktop
+
+✅ Optionally, allow HTTP (port 80) if you will run a web server
+
+8️⃣ Add Storage (Optional)
+Default: 30 GB General Purpose SSD (gp2)
+
+You can increase if needed.
+
+9 Click “Launch Instance”
+Click the Launch Instance button.
+
+Wait for the instance state to show “Running”.
+
+1️⃣1️⃣ Connect to Your Windows Instance
+Go to EC2 Dashboard → Instances
+
+Select your instance → Click Connect
+
+Choose RDP Client
+
+Click Get Password (You’ll need your .pem key)
+
+Upload the .pem file
+
+Decrypt password
+
+1️⃣2️⃣ Use Remote Desktop to Connect
+Open Remote Desktop Connection on your PC
+
+Enter the Public IPv4 Address
+
+Use username: Administrator
+
+Paste the decrypted password
+
+✅ Now you are connected to your Windows EC2 instance!
+
+Let me know if you want help with:
+
+Installing software (like IIS, Chrome, Notepad++)
+
+Setting a static IP or
+
+Auto start on reboot
