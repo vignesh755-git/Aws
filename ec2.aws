@@ -1,0 +1,51 @@
+✅ Steps to Launch an AWS EC2 Instance (Line-by-Line)
+1️⃣ Login to AWS Console
+Go to: https://console.aws.amazon.com
+
+Sign in with your AWS account.
+
+2️⃣ Navigate to EC2 Dashboard
+In the search bar, type EC2
+
+Click EC2 under Services.
+
+3️⃣ Click “Launch Instance”
+On the EC2 Dashboard, click “Launch Instance”.
+
+4️⃣ Name Your Instance
+Enter a name (e.g., MyWebServer).
+
+5️⃣ Choose an Amazon Machine Image (AMI)
+Select an OS (e.g., Amazon Linux, Ubuntu, or Windows Server).
+
+6️⃣ Choose an Instance Type
+Select instance type (e.g., t2.micro for free tier eligible).
+
+7️⃣ Create or Select a Key Pair
+Create a new key pair OR select an existing one.
+
+Download the .pem file and keep it safe (for SSH access).
+
+8️⃣ Configure Network Settings
+Select or create a VPC and subnet.
+
+Check Auto-assign Public IP = Enable.
+
+Create or select a security group:
+
+Allow SSH (port 22) for Linux
+
+Allow RDP (port 3389) for Windows
+
+Allow HTTP (port 80) if running a web server
+
+9️⃣ Add Storage (Optional)
+Default: 8GB EBS (root volume)
+
+Increase if needed.
+
+🔟 Launch Instance
+Click Launch Instance
+
+Wait for the instance state to become “running”
+
